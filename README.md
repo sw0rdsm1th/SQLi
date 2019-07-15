@@ -1,2 +1,2 @@
 # SQLi
-python scripts I use to work on shoring my cybersecurity defense abilties
+Reference python scripts I use to work on developing secure SQL-based applications
